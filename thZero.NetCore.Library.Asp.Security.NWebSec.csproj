@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>thZero.NetCore.Library.Asp.Security.NWebSec</AssemblyName>
+    <PackageId>thZero.NetCore.Library.Asp.Security.NWebSec</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateCopyrightProductAttribute>false</GenerateCopyrightProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/thzero/thZero.NetCore.Library.Asp.Security.NWebSec</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageProjectUrl>https://github.com/thzero/thZero.NetCore.Library.Asp.Security.NWebSec</PackageProjectUrl>
+    <Authors>thZero.com</Authors>
+    <Description />
+    <RootNamespace>thZero.AspNetCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\thZero.NetCore.Library\CommonAssemblyInfo.cs" Link="CommonAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NWebsec.AspNetCore.Middleware" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\thZero.NetCore.Library.Asp\thZero.NetCore.Library.Asp.csproj" />
+    <ProjectReference Include="..\thZero.NetCore.Library\thZero.NetCore.Library.csproj" />
+  </ItemGroup>
+
+</Project>

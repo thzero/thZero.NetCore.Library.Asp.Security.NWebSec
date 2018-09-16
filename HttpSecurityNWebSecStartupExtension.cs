@@ -1,11 +1,22 @@
 ﻿using System;
 
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace thZero.Services
+namespace thZero.AspNetCore
 {
-    public class ServiceHttpSecurityNWebSec : IServiceHttpSecurity
+    public class HttpSecurityNWebSecStartupExtension : IStartupExtension
     {
+        #region Public Methods
+        public void InitializeMvcPost(IServiceCollection services, IConfigurationRoot configuration)
+        {
+        }
+
+        public void InitializeMvcPre(IServiceCollection services, IConfigurationRoot configuration)
+        {
+        }
+
         public void InitializeSsl(IApplicationBuilder app)
         {
             app.UseHsts(opts => opts.AllResponses());
@@ -25,5 +36,6 @@ namespace thZero.Services
             app.UseXDownloadOptions();
             app.UseXXssProtection(opts => opts.Enabled());
         }
+        #endregion
     }
 }

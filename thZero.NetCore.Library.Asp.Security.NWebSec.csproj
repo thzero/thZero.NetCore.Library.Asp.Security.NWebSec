@@ -4,19 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>thZero.NetCore.Library.Asp.Security.NWebSec</AssemblyName>
     <PackageId>thZero.NetCore.Library.Asp.Security.NWebSec</PackageId>
+    <Description></Description>
+    <Authors>thZero.com</Authors>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateCopyrightProductAttribute>false</GenerateCopyrightProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/thzero/thZero.NetCore.Library.Asp.Security.NWebSec</RepositoryUrl>
-    <RepositoryType>GitHub</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/thzero/thZero.NetCore.Library.Asp.Security.NWebSec</PackageProjectUrl>
-    <Authors>thZero.com</Authors>
-    <Description />
-    <RootNamespace>thZero.AspNetCore</RootNamespace>
+    <RepositoryType>GitHub</RepositoryType>
+    <RepositoryUrl>https://github.com/thzero/thZero.NetCore.Library.Asp.Security.NWebSec</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

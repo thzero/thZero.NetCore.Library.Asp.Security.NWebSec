@@ -46,7 +46,9 @@ namespace thZero.AspNetCore
 
         public virtual void ConfigureInitializeSsl(IApplicationBuilder app)
         {
+#if !DEBUG
             app.UseHsts(opts => opts.AllResponses());
+#endif
         }
 
         public virtual void ConfigureInitializeStaticPost(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider svp)

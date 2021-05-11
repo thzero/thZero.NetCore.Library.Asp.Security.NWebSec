@@ -1,6 +1,6 @@
 ﻿/* ------------------------------------------------------------------------- *
 thZero.NetCore.Library.Asp.Security.NWebSec
-Copyright (C) 2016-2019 thZero.com
+Copyright (C) 2016-2021 thZero.com
 
 <development [at] thzero [dot] com>
 
@@ -36,7 +36,7 @@ namespace thZero.AspNetCore
 #endif
         }
 
-        public override void ConfigureInitializeStaticPost(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider svp)
+        public override void ConfigureInitializeStaticPost(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider svp)
         {
             base.ConfigureInitializeStaticPost(app, env, svp);
 
@@ -45,7 +45,7 @@ namespace thZero.AspNetCore
             app.UseNoCacheHttpHeaders();
         }
 
-        public override void ConfigureInitializeStaticPre(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider svp)
+        public override void ConfigureInitializeStaticPre(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider svp)
         {
             base.ConfigureInitializeStaticPre(app, env, svp);
 
